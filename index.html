@@ -19,17 +19,18 @@
 
   </style>
    <script>
-    var MonAge = prompt("Quel est ton âge?")
-  if(MonAge<=27 && MonAge >=12){
-    alert("Vous avez droit à la carte 12-27!")
-  } else if (MonAge >=60) {
-    alert("Tu as droit à la carte des petits vieux")
+
+    function carteDeReduction(MonAge) {
+    if(MonAge<=27 && MonAge >=12){
+      return("Vous avez droit à la carte 12-27!")
+    } else if (MonAge >=60) {
+      return("Tu as droit à la carte des petits vieux")
+    }
+  else {
+    return("Va bien te faire voir!")
   }
-else {
-  alert("Va bien te faire voir!")
 }
-
-
+alert(carteDeReduction(28))
     </script>
   }
 </head>
